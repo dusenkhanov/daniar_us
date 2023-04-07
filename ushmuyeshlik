@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+
+    // ushmuyeshliktin muyeshlerin kiritiw
+    System.out.print("Birinshi muyeshti kiritin: ");
+    double a = input.nextDouble();
+
+    System.out.print("Ekinshi muyeshti kiritin: ");
+    double b = input.nextDouble();
+
+    System.out.print("Ushinshi  muyeshti kiritin:: ");
+    double c = input.nextDouble();
+
+    // ushmuyeshlik maydanin esaplaw
+    double s = (a + b + c) / 2; 
+    double area = Math.sqrt(s * (s - a) * (s - b) * (s - c)); 
+
+    System.out.println("Maydani: " + area);
+  }
+}
